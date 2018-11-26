@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.Controleur_NoeudRacine">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Reserver une Salle" />
+          <Menu mnemonicParsing="false" text="Gestion Salle et Sport">
+            <items>
+                  <MenuItem id="menuItem_gesSport" fx:id="menuItem_gesSport" mnemonicParsing="false" text="Gestion des Sports" />
+              <MenuItem mnemonicParsing="false" text="Lier Salle et Sport" />
+                  <MenuItem mnemonicParsing="false" text="Délier Salle et Sport" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Gestion Association">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Ajouter Association" />
+                  <MenuItem mnemonicParsing="false" text="Lier Association et Sport" />
+                  <MenuItem mnemonicParsing="false" text="Modifier Association" />
+              <MenuItem mnemonicParsing="false" text="Supprimer Association" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Administratif et Statisitiques">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Plan occupation salle" />
+                  <MenuItem mnemonicParsing="false" text="Stats 1" />
+                  <MenuItem mnemonicParsing="false" text="Stats 2" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
