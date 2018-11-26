@@ -5,8 +5,6 @@
  */
 package modele;
 
-import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
-
 /**
  *
  * @author jules
@@ -73,7 +71,7 @@ public class Reservation
     @Override
     public String toString()
     {
-        return "Reservation{" + "salle=" + salle + ", date=" + date + ", heure=" + heure + ", Asso=" + Asso + '}';
+        return "Reservation{" + "salle=" + salle.toString() + ", date=" + date + ", heure=" + heure + ", Asso=" + Asso.toString() + '}';
     }
    
     

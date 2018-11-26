@@ -39,7 +39,14 @@ public class MainApp extends Application
     @Override
     public void start(Stage primaryStage) throws ClassNotFoundException, SQLException
     {
-      
+        ArrayList<Reservation> lesReservations = gesReservation.getReservations();
+        
+        for(int i = 0; i< lesReservations.size(); i++)
+        {
+            System.out.println("coucou");
+            System.out.println(lesReservations.get(i).toString());
+        }
+        
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("Accueil");
         try

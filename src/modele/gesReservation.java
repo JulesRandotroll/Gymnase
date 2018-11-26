@@ -24,12 +24,13 @@ public class gesReservation
     static String pilote = "org.gjt.mm.mysql.Driver";
     static String url = new String("jdbc:mysql://localhost/001_gymnase");
     
-    
     public static ArrayList<Reservation> getReservations() throws ClassNotFoundException, SQLException
     {
         Statement stmt;
         ResultSet jeuEnr;
         ArrayList<Reservation> lesReservations = new ArrayList();
+        
+        
         
         Class.forName(pilote);
         conn = DriverManager.getConnection(url,"root","");
@@ -38,7 +39,12 @@ public class gesReservation
         
         while(jeuEnr.next())
         {
-            System.out.println(jeuEnr.getString(0));
+            Salle uneSalle = new Salle();
+            Association uneAssociation = new Association();
+            
+            // jeuEnr.getString(1) => refSalle
+            // jeuEnr.getString(4) => refAsso
+            lesReservations.add(new Reservation(uneSalle,jeuEnr.getString(2),jeuEnr.getString(3),uneAssociation));
         }
        return lesReservations;
     }
