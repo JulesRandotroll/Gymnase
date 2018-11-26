@@ -22,7 +22,7 @@ public class gesReservation
     static Connection conn;
     
     static String pilote = "org.gjt.mm.mysql.Driver";
-    static String url = new String("jdbc:mysql://localhost/gesemp");
+    static String url = new String("jdbc:mysql://localhost/001_gymnase");
     
     
     public static ArrayList<Reservation> getReservations() throws ClassNotFoundException, SQLException
@@ -38,7 +38,7 @@ public class gesReservation
         
         while(jeuEnr.next())
         {
-            //System.out.println(jeuEnr.getString(0));
+            System.out.println(jeuEnr.getString(0));
         }
        return lesReservations;
     }

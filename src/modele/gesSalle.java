@@ -21,7 +21,7 @@ public class gesSalle
    static Connection conn;
     
     static String pilote = "org.gjt.mm.mysql.Driver";
-    static String url = new String("jdbc:mysql://localhost/gesemp");
+    static String url = new String("jdbc:mysql://localhost/001_gymnase");
 
     public static ArrayList<Salle> getSalles() throws ClassNotFoundException, SQLException
     {
